@@ -1,5 +1,6 @@
 ## Technology used 
 - React
+- React Context
 - Styled-components
 - CSS grid
 - Highcharts
