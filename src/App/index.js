@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
-import styled, {css} from 'styled-components'
+import Navbar from './Navbar'
+import AppLayout from './AppLayout'
+
 
 function App() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+   <AppLayout>
+     <Navbar/>
+     <h1>hi</h1>
+   </AppLayout>
+
   );
 }
 
