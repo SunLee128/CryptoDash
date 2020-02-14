@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar'
-import AppLayout from './AppLayout'
-import AppProvider from './AppProvider'
-import Settings from '../Settings'
-import Content from '../Shared/Content'
+import Navbar from './Navbar';
+import AppLayout from './AppLayout';
+import {AppProvider} from './AppProvider';
+import Settings from '../Settings';
+import Content from '../Shared/Content';
 
-function App() {
+function App () {
   return (
 
     <AppLayout>
       <AppProvider>
-        <Navbar/>
+        <Navbar />
         <Content>
           <Settings />
         </Content>

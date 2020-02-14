@@ -3,7 +3,7 @@ const cc = require('cryptocompare')
 
 export const AppContext = React.createContext();
 
-export default class AppProvider extends React.Component {
+export class AppProvider extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -19,8 +19,9 @@ export default class AppProvider extends React.Component {
   }
 
   fetchCoins = async () => {
-    let coinList = (await cc.coinList().Data)
-    this.setState(coinList)
+    let coinList = (await cc.coinList()).Data;
+    // console.log(coinList)
+    this.setState({coinList})
   }
 
   confirmFavorites = () => {
@@ -38,7 +39,7 @@ export default class AppProvider extends React.Component {
     if (!cryptoDashData){
       return {page: 'settings', firstVisit: true}
     }
-    return {}
+    return {};
   }
 
   setPage = page => this.setState({page})
