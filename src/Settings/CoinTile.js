@@ -35,7 +35,6 @@ export default function ({ coinKey, topSection }) {
               symbol={coin.Symbol}
             />
             <CoinImage coin={coin} />
->
           </TileClass>);
       }}
     </AppContext.Consumer>
