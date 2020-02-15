@@ -1,9 +1,9 @@
 import React from 'react';
-import {AppContext} from "../App/AppProvider";
+import { AppContext } from '../App/AppProvider';
 
-export default function ({name, children}) {
+export default function ({ name, children }) {
   return <AppContext.Consumer>
-    {({page}) => {
+    {({ page }) => {
       if (page !== name) {
         return null;
       }
