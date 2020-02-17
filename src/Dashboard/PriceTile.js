@@ -61,7 +61,7 @@ function PriceTile ({ sym, data, currentFavorite, setCurrentFavorite }) {
         <ChangePercent data={data} />
       </CoinHeaderGridStyled>
       <TickerPrice>
-        A$ {numberFormat(data.PRICE)}
+        ${numberFormat(data.PRICE)}
       </TickerPrice>
     </PriceTileStyled>
   );

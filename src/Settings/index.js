@@ -12,5 +12,5 @@ export default function () {
     <ConfirmButton />
     <Search />
     <CoinGrid />
-         </Page>;
+  </Page>;
 }

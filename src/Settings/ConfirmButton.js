@@ -6,17 +6,17 @@ import { fontSize1, greenBoxShadow, color3 } from '../Shared/Styles';
 const ConfirmButtonStyled = styled.div`
   margin: 20px;
   color: ${color3}
-  ${fontSize1}
+  ${fontSize1} 
   padding: 5px;
-  cursor: pointer;
+  cursor: pointer; 
   &:hover {
-    ${greenBoxShadow}
+    ${greenBoxShadow} 
   }
 `;
+
 export const CenterDiv = styled.div`
-  display:grid;
+  display: grid;
   justify-content: center;
-  cursor: pointer;
 `;
 
 export default function () {

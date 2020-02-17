@@ -1,26 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import Navbar from './Navbar';
 import AppLayout from './AppLayout';
+import Navbar from './Navbar';
 import { AppProvider } from './AppProvider';
 import Settings from '../Settings';
-import Content from '../Shared/Content';
 import Dashboard from '../Dashboard';
+import Content from '../Shared/Content';
 
-function App () {
-  return (
-
-    <AppLayout>
-      <AppProvider>
-        <Navbar />
-        <Content>
-          <Settings />
-          <Dashboard />
-        </Content>
-      </AppProvider>
-    </AppLayout>
-
-  );
+class App extends Component {
+  render () {
+    return (
+      <AppLayout>
+        <AppProvider>
+          <Navbar />
+          <Content>
+            <Settings />
+            <Dashboard />
+          </Content>
+        </AppProvider>
+      </AppLayout>
+    );
+  }
 }
 
 export default App;

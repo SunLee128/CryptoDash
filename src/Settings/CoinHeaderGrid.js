@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { DeletableTile } from '../Shared/Tile';
 
 export const CoinHeaderGridStyled = styled.div`
-  display: grod;
+  display: grid;
   grid-template-columns: 1fr 1fr;
 `;
 
@@ -19,6 +19,7 @@ const DeleteIcon = styled.div`
     color: red;
   }
 `;
+
 export default function ({ name, symbol, topSection }) {
   return <CoinHeaderGridStyled>
     <div> {name} </div>
